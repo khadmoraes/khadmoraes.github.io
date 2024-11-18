@@ -1,0 +1,178 @@
+/* Estilo base */
+body {
+    background-color: #fbf8f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #614124;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    width: 35px;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('imgs/banner.png'); /* Substitua pelo caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+/* Conteúdo principal */
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.content button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #bf852e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #c39b7f;
+}
+
+/* Galeria */
+.gallery {
+    margin: 20px auto;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+.gallery img, .gallery video {
+    max-width: 100%;
+    margin: 10px;
+    display: inline-block;
+    max-height: 300px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Esconder o input file */
+input[type="file"] {
+    display: none;
+}
+
+/* Estilo do botão customizado */
+.custom-file-upload {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #bf852e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.custom-file-upload:hover {
+    background-color: #c39b7f;
+}
+
+/* Alinhamento do label com o botão */
+label[for="fileInput"] {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Media Queries para responsividade */
+
+/* Para telas menores que 768px (celulares) */
+@media (max-width: 768px) {
+    header img {
+        width: 120px;
+    }
+
+    .banner {
+        height: 200px; /* Reduz a altura do banner */
+    }
+
+    .content h1 {
+        font-size: 2rem; /* Diminui o tamanho da fonte para o título */
+    }
+
+    .content p {
+        font-size: 1rem; /* Diminui o tamanho da fonte para o parágrafo */
+    }
+
+    .content button, .custom-file-upload {
+        font-size: 1rem; /* Ajusta o tamanho dos botões */
+        padding: 8px 16px;
+    }
+
+    .gallery img, .gallery video {
+        max-height: 200px; /* Reduz a altura das imagens e vídeos na galeria */
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    .banner {
+        height: 150px; /* Reduz ainda mais o banner */
+    }
+
+    .content h1 {
+        font-size: 1.8rem; /* Reduz o tamanho do título */
+    }
+
+    .content p {
+        font-size: 0.9rem; /* Reduz o tamanho do parágrafo */
+    }
+
+    .content button, .custom-file-upload {
+        font-size: 0.9rem; /* Ajusta o tamanho dos botões */
+        padding: 6px 12px;
+    }
+
+    .gallery img, .gallery video {
+        max-height: 150px; /* Reduz ainda mais as imagens e vídeos */
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.gallery img, .gallery video {
+    max-width: 100%; /* Ajusta a largura máxima */
+    height: auto;    /* Mantém a proporção */
+    border-radius: 5px; /* Cantos arredondados */
+}

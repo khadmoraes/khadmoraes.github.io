@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luziara Party</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linkando o CSS externo -->
+</head>
+<body>
+    <header>
+        <img src="imgs/logo.png" alt="Logo da Festa">
+    </header>
+    <div class="banner"></div>
+    <div class="content">
+        <p>Envie uma foto ou vídeo para a nossa galeria e participe da comemoração!</p>
+        <input type="file" id="fileInput">
+        <label for="fileInput" class="custom-file-upload">Escolher Foto/Vídeo</label>
+        <!-- Modifiquei o onclick para evitar conflitos -->
+        <button id="uploadButton">Enviar Foto/Vídeo</button>
+    </div>
+    <div class="gallery" id="uploads"></div>
+    <footer>
+        <p>&copy; 2024 Luziara Party. Todos os direitos reservados.</p>
+    </footer>
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>
